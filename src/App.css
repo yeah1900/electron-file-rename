@@ -1,24 +1,45 @@
-.App {
-  text-align: center;
+body {
+  overflow: hidden;
+  font-size: 16px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+input, option {
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.header {
+  line-height: 36px;
+  padding: 3px;
+  font-size: 1rem;
 }
 
-.App-intro {
-  font-size: large;
+.header button {
+  font-size: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.matched-count {
+  width: 250px;
+  padding: 5px;
+  font-family: monospace;
+}
+
+.files-wrapper {
+  width: 250px;
+  margin: 5px auto;
+  padding: 5px;
+  border: 2px dashed rgb(37, 94, 4);
+  overflow: auto;
+  max-height: 700px;
+  font-family: monospace;
+}
+
+.files-wrapper .file {
+  margin: 2px 0;
+}
+
+.files-wrapper .file:hover {
+  background-color: rgb(230, 255, 216);
+  cursor: pointer;
 }
